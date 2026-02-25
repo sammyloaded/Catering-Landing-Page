@@ -432,10 +432,18 @@ box-shadow: 0px 4px 4px 0px #00000066;
 .cta-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 18px;
+    max-width: 605px;
 }
 
 .cta-content h1{
     font-size: 45px;
+    color: white;
+}
+
+.cta-content p{
+    font-size: 18px;
+    color: white;
+    max-width: 494px;
 }
 
