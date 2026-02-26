@@ -30,8 +30,7 @@ box-shadow: 0px 4px 4px 0px #00000066;
 }
 
 .logo {
-  font-size: 22px;
-  font-weight: 600;
+
   display: flex;
   align-items: center;
   gap: 8px;
@@ -803,7 +802,7 @@ box-shadow: 0px 4px 4px 0px #00000066;
 .footer-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.4);
   background-position: center;
 }
 
@@ -820,13 +819,14 @@ box-shadow: 0px 4px 4px 0px #00000066;
 /* BRAND */
 .footer-brand .logo {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  /* align-items: center; */
   gap: 12px;
   margin-bottom: 25px;
 }
 
 .footer-brand .logo img {
-  width: 40px;
+  width: 100px;
 }
 
 .footer-brand .logo span {
@@ -885,7 +885,158 @@ box-shadow: 0px 4px 4px 0px #00000066;
 /* Responsiveness  */
 @media (max-width: 450px) {
 
-    .cta h1{
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:400px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .nav ul{
+    display: none;
+  }
+
+  .hero p {
+    font-size: 15px;
+  }
+
+  .cta-content h1 {
+    font-size: 26px;
+  }
+
+  .card-content h3,
+  .menu-content h3 {
+    font-size: 20px;
+  }
+
+  .contact-left h3,
+  .contact-right h3 {
+    font-size: 24px;
+  }
+
+  .btn,
+  .cta-btn,
+  .view-menu-btn {
+    padding: 10px 32px;
+    text-align: center;
+    font-size: 12px;
+    /* width: 100%; */
+    /* justify-content: center; */
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  /* Sections */
+  .packages,
+  .menu-section,
+  .cta,
+  .contact-section,
+  .testimonials-section {
+    padding: 80px 20px;
+  }
+
+  .section-header h2,
+  .menu-header h2,
+  .about-header h2,
+  .contact-header h2,
+  .testimonials-header h2 {
+    font-size: 32px;
+  }
+  .about-section {
+    padding: 60px 20px;
+  }
+
+  /* Stack image below features */
+  .about-wrapper {
+    grid-template-columns: 1fr;   
+    gap: 40px;
+  }
+
+  
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+
+  .about-image {
+    height: auto;
+  }
+
+  .about-image img {
+    height: auto;               
+    width: 100%;
+    border-radius: 80px 80px 0 0; 
+
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-wrapper {
+    flex-direction: column;
+  }
+
+  .menu-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow{
+    display: none;
+  }
+
+  .menu-card {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* CTA */
+  .cta {
+    height: auto;
+    padding: 100px 20px;
+  }
+
+  .cta-content h1 {
+    font-size: 32px;
+  }
+
+  /* Contact Panels */
+  .contact-left,
+  .contact-right {
+    padding: 40px 25px;
+    height: auto;
+  }
+
+  /* Testimonials */
+  .testimonials-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-card {
+    padding: 40px 25px 70px;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+    padding: 0 20px 60px;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
+  }
+
+
+
+    /* .cta h1{
         font-size: 35px;
         text-align: center;
     }
@@ -913,6 +1064,6 @@ box-shadow: 0px 4px 4px 0px #00000066;
     }
     .testimonials-wrapper{
       grid-template-columns: 1fr;
-    }
+    } */
 }
 
