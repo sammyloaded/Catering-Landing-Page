@@ -952,7 +952,7 @@ box-shadow: 0px 4px 4px 0px #00000066;
     padding: 60px 20px;
   }
 
-  /* Stack image below features */
+
   .about-wrapper {
     grid-template-columns: 1fr;   
     gap: 40px;
@@ -995,6 +995,38 @@ box-shadow: 0px 4px 4px 0px #00000066;
   .menu-card {
     width: 100%;
     max-width: 350px;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  /* Stack panels vertically */
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Remove forced heights */
+  .contact-left,
+  .contact-right {
+    height: auto;
+    margin-bottom: 0;
+    padding: 40px 25px;
+  }
+
+  /* Make form single column */
+  .reservation-form {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust heading sizes */
+  .contact-header h2 {
+    font-size: 32px;
+  }
+
+  .contact-left h3,
+  .contact-right h3 {
+    font-size: 24px;
   }
 
   /* CTA */
